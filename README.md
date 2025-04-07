@@ -1,4 +1,4 @@
-# [Finals-Lab-Task-2](https://github.com/user-attachments/files/19631554/Soguilon.Carl.Asnef.B.FINALS2.EDM.SQL.docx)
+# [Finals Lab Task 2 - Transforming ER Model to Relational Tables](https://github.com/user-attachments/files/19631554/Soguilon.Carl.Asnef.B.FINALS2.EDM.SQL.docx)
 - This portfolio demonstrates my understanding of MySQL database creation using a simplified student assignment submission system. It covers the step-by-step creation of tables representing students, assignments, and their submissions. This exercise applies data types, relationships, and constraints like primary keys, foreign keys, and composite keys to build a fully functional relational schema.
 
 # Step By Step Process
