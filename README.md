@@ -1,4 +1,4 @@
-# [Finals Lab Task 2 - Transforming ER Model to Relational Tables](https://github.com/user-attachments/files/19631554/Soguilon.Carl.Asnef.B.FINALS2.EDM.SQL.docx)
+# [Finals Lab Task 2 - Transforming ER Model to Relational Tables](https://github.com/user-attachments/files/19642468/Finals.Lab.Task.2.-.Ordona.docx)
 - This portfolio demonstrates my understanding of MySQL database creation using a simplified student assignment submission system. It covers the step-by-step creation of tables representing students, assignments, and their submissions. This exercise applies data types, relationships, and constraints like primary keys, foreign keys, and composite keys to build a fully functional relational schema.
 
 # Step By Step Process
@@ -22,24 +22,24 @@
 # Screenshots
 ## Query Statements
 1. Student Table
-- ![Image](https://github.com/user-attachments/assets/65bb70d5-9864-46ea-96af-8424b4e79a97)
+- ![Image](https://github.com/user-attachments/assets/31bf974d-4a00-411b-8a8e-84a159f7ea74)
 
 2. Assignment Table
-- ![Image](https://github.com/user-attachments/assets/b8dcd7f3-8443-4be2-9f87-f69e9ba68437)
+- ![Image](https://github.com/user-attachments/assets/3ae89b77-3729-47e7-a889-d69e8110a052)
 
 3. Submission Table
-- ![Image](https://github.com/user-attachments/assets/53043940-901d-4f7f-99d2-e6b2a0174ad8)
+- ![Image](https://github.com/user-attachments/assets/173a02c8-de96-4f1b-b59a-f13d377ef8af)
 
 ## Table Structure
 1. Student Table
-- ![Image](https://github.com/user-attachments/assets/5d2c547a-591b-4aa3-8216-fd8534177855)
+- ![Image](https://github.com/user-attachments/assets/ffa8ad03-172d-4ee3-803b-1c1d161259f0)
 
 2. Assignment Table
-- ![Image](https://github.com/user-attachments/assets/0e969cb9-382c-4f01-a491-1d9d2eaab07b)
+- ![Image](https://github.com/user-attachments/assets/1517a71a-5a84-42c0-8d83-86b8905d464c)
 
 3. Submission Table
-- ![Image](https://github.com/user-attachments/assets/e53bf254-3af7-4405-ae97-d8b1a76fc2e3)
+- ![Image](https://github.com/user-attachments/assets/2dec876b-0834-4045-befa-3b89b1cc2ca9)
 
 ## EER Diagram
-- ![Image](https://github.com/user-attachments/assets/1d29925b-4f4f-4a7a-9937-afa7efa96811)
-- ![Image](https://github.com/user-attachments/assets/7e6b2f31-14a3-4f67-900b-f17e6f85e954)
+- ![Image](https://github.com/user-attachments/assets/89d690f1-63e2-465a-9455-d46166a425d4)
+- ![Image](https://github.com/user-attachments/assets/71d69680-01ec-4a9f-bcbe-7132f843f0eb)
