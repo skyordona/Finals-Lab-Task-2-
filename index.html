@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Lab Task 2</title>
+    <style>
+        /* Street Fighter Theme */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://cdn.steamstatic.com/steamcommunity/public/images/items/1364780/d8a11446810c7ebce3ca74c5e7e2a2ce689f2f8c.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Loading Screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 2s forwards;
+            animation-delay: 3s;
+        }
+
+        .loading-text {
+            color: #ff0;
+            font-size: 24px;
+            animation: blink 0.5s infinite;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 5s;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .download-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h1, h2 {
+            color: #ff0;
+            text-shadow: 3px 3px #f00;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: 2px solid #ff0;
+            padding-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            border: 3px solid #ff0;
+            margin: 10px 0;
+            box-shadow: 0 0 10px #f00;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #ff0;
+            color: #000;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            background: #f00;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #ff0;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        li:hover {
+            transform: translateX(10px);
+            background: rgba(255, 0, 0, 0.3);
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; visibility: hidden; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-text">LOADING...</div>
+    </div>
+
+    <div class="container">
+        <h1>Finals Lab Task 2</h1>
+        <h2>Transforming ER Model to Relational Tables</h2>
+
+        <div class="download-container">
+            <a href="https://github.com/user-attachments/files/19642468/Finals.Lab.Task.2.-.Ordona.docx" class="download-btn">Download Full Documentation</a>
+        </div>
+
+        <p>This portfolio demonstrates my understanding of MySQL database creation using a simplified student assignment submission system. It covers the step-by-step creation of tables representing students, assignments, and their submissions. This exercise applies data types, relationships, and constraints like primary keys, foreign keys, and composite keys to build a fully functional relational schema.</p>
+
+        <h2>Step By Step Process</h2>
+        <ol>
+            <li>Create the student table:
+                <ul>
+                    <li>Define username as a VARCHAR(50)</li>
+                    <li>Set username as the Primary Key</li>
+                </ul>
+            </li>
+            <li>Create the assignment table:
+                <ul>
+                    <li>Define shortname as a VARCHAR(50) and set it as the Primary Key</li>
+                    <li>Define due_date as a DATE NOT NULL</li>
+                    <li>Define url as a VARCHAR(255), which can be null</li>
+                </ul>
+            </li>
+            <li>Create the submission table:
+                <ul>
+                    <li>Define username and shortname both as VARCHAR(50)</li>
+                    <li>Define version as an INT</li>
+                    <li>Define submit_date as a DATE NOT NULL</li>
+                    <li>Define data as TEXT</li>
+                    <li>Set a composite primary key of (username, shortname, version)</li>
+                    <li>Add foreign keys referencing the student and assignment tables</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Screenshots</h2>
+        <h3>Query Statements</h3>
+        <img src="https://github.com/user-attachments/assets/31bf974d-4a00-411b-8a8e-84a159f7ea74" alt="Student Table Query">
+        <img src="https://github.com/user-attachments/assets/3ae89b77-3729-47e7-a889-d69e8110a052" alt="Assignment Table Query">
+        <img src="https://github.com/user-attachments/assets/173a02c8-de96-4f1b-b59a-f13d377ef8af" alt="Submission Table Query">
+
+        <h3>Table Structure</h3>
+        <img src="https://github.com/user-attachments/assets/ffa8ad03-172d-4ee3-803b-1c1d161259f0" alt="Student Table Structure">
+        <img src="https://github.com/user-attachments/assets/1517a71a-5a84-42c0-8d83-86b8905d464c" alt="Assignment Table Structure">
+        <img src="https://github.com/user-attachments/assets/2dec876b-0834-4045-befa-3b89b1cc2ca9" alt="Submission Table Structure">
+
+        <h3>EER Diagram</h3>
+        <img src="https://github.com/user-attachments/assets/89d690f1-63e2-465a-9455-d46166a425d4" alt="EER Diagram 1">
+        <img src="https://github.com/user-attachments/assets/71d69680-01ec-4a9f-bcbe-7132f843f0eb" alt="EER Diagram 2">
+    </div>
+</body>
+</html>
